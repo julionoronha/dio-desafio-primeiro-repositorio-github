@@ -1,0 +1,1 @@
+- Como boa prática, deve existir apenas um <h1> por página
