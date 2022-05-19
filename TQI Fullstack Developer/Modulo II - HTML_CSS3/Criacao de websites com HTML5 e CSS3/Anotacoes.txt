@@ -1,1 +1,12 @@
 - Como boa prática, deve existir apenas um <h1> por página
+
+- Um id só pode ser usado uma vez por página
+
+- Box model
+
+Margin
+    Border
+        Padding
+	    Content
+
+- Como boa prática, manter margens em apenas uma única direção
