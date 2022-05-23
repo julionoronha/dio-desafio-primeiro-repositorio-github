@@ -246,6 +246,11 @@ a:hover
     width: 90%;
 }
 
+.card-container a
+{
+    text-decoration: none;
+}
+
 .card
 {
     height: 300px;
@@ -365,6 +370,11 @@ a:hover
     }
 
     .container .card-container:nth-child(1)
+    {
+        flex-direction: column-reverse;
+    }
+    
+    .container .card-container:nth-child(3)
     {
         flex-direction: column-reverse;
     }
