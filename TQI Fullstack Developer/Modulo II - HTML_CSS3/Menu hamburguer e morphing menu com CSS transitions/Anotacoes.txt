@@ -2,4 +2,3 @@ Transition permite difinir a transição entre dois estados de um elemento.
 
 -animation: name duration timing-function delay iteration-count direction fill-mode;
 
-Parte 5
