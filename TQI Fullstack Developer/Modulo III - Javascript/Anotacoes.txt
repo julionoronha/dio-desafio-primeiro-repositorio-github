@@ -1,0 +1,1 @@
+Como boa prática, constantes são declaradas em maiúsculo
