@@ -1,1 +1,3 @@
-Como boa prática, constantes são declaradas em maiúsculo
+- Como boa prática, constantes são declaradas em maiúsculo
+
+- Estudar VueJS, Angular, React e jQuery (focar nos três primeiros)
