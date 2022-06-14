@@ -1,3 +1,43 @@
 - Como boa prática, constantes são declaradas em maiúsculo
 
 - Estudar VueJS, Angular, React e jQuery (focar nos três primeiros)
+
+- Var se utiliza em escopo global ou local, let se utiliza em escopo local apenas
+
+- Variáveis normais são declaradas em camel case (exemploVariavel), constantes são declaradas em upper case snake case (EXEMPLO_CONSTANTE)
+
+- Objetos são como dicionário de dados
+
+- Object.values(obj) / Object.keys(obj)
+
+- Posso adicionar chaves dinamicamente
+
+- É possível declarar o nome de uma chave com o valor de uma variável da seguinte forma:
+
+let chave = "nome";
+objeto[chave] = "Joao" 
+---------------------
+Que resulta em objeto.nome = "Joao"
+
+
+- Para tratar uma variável que é nula ou undefined, basta checar se ela retorna false, PORÉM null e undefined NÃO são false, apenas tratatos como false
+
+- Funções anônimas não possuem nome (duh) e são atribuídas a variáveis
+
+- Funções autoinvocáveis são funções anônimas entre parênteses seguida por outro par de parênteses que representam sua chamada, também podem ser armazenadas em variáveis
+
+- Callback é uma função passada como argumento para outra
+
+- O objeto arguments contém todos os argumentos de uma função, declarados ou não
+
+- Spread é uma forma de lidar separadamente com elementos de um array
+
+- Rest combina elementos independentes em um array
+
+- Call invoca uma função, passando um objeto como primeiro argumento extra, modificando o 'this' de tal função
+
+- Apply é similar ao call, mas precisa passar os argumentos pós-objeto por um array
+
+- Bind são funções com parâmetros específicos atribuídas a variáveis
+
+- Arrow functions são declaradas em constantes
