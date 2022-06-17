@@ -1,10 +1,11 @@
 // Variáveis
 const cards = document.querySelectorAll('.card');
+const totalPairs = cards.length / 2;
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-
+let pairsFound = 0;
 
 //Funções
 
@@ -34,11 +35,17 @@ function checkCards(){
     }else{
         unflipCards();
     }
+
+    if(pairsFound == totalPairs){
+        unflipAllCardsAndShuffle();
+    }
 }
 
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    pairsFound++;
 
     resetBoard();
 }
@@ -50,6 +57,19 @@ function unflipCards(){
         secondCard.classList.remove('flip');
        
          resetBoard();
+    }, 1500);
+}
+
+function unflipAllCardsAndShuffle(){
+    setTimeout(() => {
+        cards.forEach((card) =>{
+            card.classList.remove('flip');
+            card.addEventListener('click', flipCard);
+            let randomPosition = Math.floor(Math.random() * 24);
+            card.style.order = randomPosition;
+        });
+        resetBoard();
+        pairsFound = 0;
     }, 1500);
 }
 
